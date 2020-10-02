@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b9cb6f1-0607-4edf-8cbe-493cd7d85184" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i7Ep8ekIw4AKVPSYzQXyt0ADJQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Test for delete travel ">
+    <configuration name="Add " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/addtravel.test.js" />
+      <test-names>
+        <test-name value="Add " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test for delete travel " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/travel.test.js" />
+      <test-names>
+        <test-name value="Test for delete travel " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test for get all travels list " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/addtravel.test.js" />
+      <test-names>
+        <test-name value="Test for get all travels list " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="verify getData function throws bad request when parameters bad values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/addtravel.test.js" />
+      <test-names>
+        <test-name value="verify getData function throws bad request when parameters bad values" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/server/index.js" working-dir="$PROJECT_DIR$/src/server">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Test for delete travel " />
+        <item itemvalue="Jest.Test for get all travels list " />
+        <item itemvalue="Jest.Add " />
+        <item itemvalue="Jest.verify getData function throws bad request when parameters bad values" />
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b9cb6f1-0607-4edf-8cbe-493cd7d85184" name="Default Changelist" comment="" />
+      <created>1601250409753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601250409753</updated>
+      <workItem from="1601250410881" duration="4230000" />
+      <workItem from="1601258886726" duration="29440000" />
+      <workItem from="1601550446507" duration="25040000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1480" y="614" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601623036397">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state x="1480" y="614" key="#com.intellij.execution.impl.EditConfigurationsDialog/80.23.3280.1867@80.23.3280.1867" timestamp="1601623036397" />
+    <state x="1873" y="776" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601334673405">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state x="1873" y="776" key="#com.intellij.fileTypes.FileTypeChooser/80.23.3280.1867@80.23.3280.1867" timestamp="1601334673405" />
+    <state x="1716" y="565" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1601335767200">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state x="1716" y="565" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/80.23.3280.1867@80.23.3280.1867" timestamp="1601335767200" />
+    <state width="1142" height="408" key="GridCell.Tab.0.bottom" timestamp="1601646383258">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="408" key="GridCell.Tab.0.bottom/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383258" />
+    <state width="1142" height="408" key="GridCell.Tab.0.center" timestamp="1601646383257">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="408" key="GridCell.Tab.0.center/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383257" />
+    <state width="1142" height="408" key="GridCell.Tab.0.left" timestamp="1601646383256">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="408" key="GridCell.Tab.0.left/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383256" />
+    <state width="1142" height="408" key="GridCell.Tab.0.right" timestamp="1601646383257">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="408" key="GridCell.Tab.0.right/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383257" />
+    <state width="1142" height="501" key="GridCell.Tab.1.bottom" timestamp="1601623110508">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.1.bottom/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110508" />
+    <state width="1142" height="501" key="GridCell.Tab.1.center" timestamp="1601623110508">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.1.center/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110508" />
+    <state width="1142" height="501" key="GridCell.Tab.1.left" timestamp="1601623110507">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.1.left/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110507" />
+    <state width="1142" height="501" key="GridCell.Tab.1.right" timestamp="1601623110508">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.1.right/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110508" />
+    <state width="1142" height="501" key="GridCell.Tab.2.bottom" timestamp="1601623110510">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.2.bottom/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110510" />
+    <state width="1142" height="501" key="GridCell.Tab.2.center" timestamp="1601623110509">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.2.center/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110509" />
+    <state width="1142" height="501" key="GridCell.Tab.2.left" timestamp="1601623110509">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.2.left/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110509" />
+    <state width="1142" height="501" key="GridCell.Tab.2.right" timestamp="1601623110509">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.2.right/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110509" />
+    <state width="1142" height="501" key="GridCell.Tab.3.bottom" timestamp="1601623110511">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.3.bottom/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110511" />
+    <state width="1142" height="501" key="GridCell.Tab.3.center" timestamp="1601623110510">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.3.center/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110510" />
+    <state width="1142" height="501" key="GridCell.Tab.3.left" timestamp="1601623110510">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.3.left/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110510" />
+    <state width="1142" height="501" key="GridCell.Tab.3.right" timestamp="1601623110511">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state width="1142" height="501" key="GridCell.Tab.3.right/80.23.3280.1867@80.23.3280.1867" timestamp="1601623110511" />
+    <state x="1907" y="636" width="670" height="676" key="search.everywhere.popup" timestamp="1601643826333">
+      <screen x="80" y="23" width="3280" height="1867" />
+    </state>
+    <state x="1907" y="636" width="670" height="676" key="search.everywhere.popup/80.23.3280.1867@80.23.3280.1867" timestamp="1601643826333" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/client/js/update.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/server/index.js</url>
+          <line>159</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/client/index.js</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

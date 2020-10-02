@@ -1,0 +1,58 @@
+//TITLE
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(auto, 800px);
+  grid-template-areas:
+        "ti"
+        "bt"
+        "li";
+
+  justify-content: center;
+}
+
+  .travel_list{
+    grid-area: li;
+  //  width : 800px;
+  //  display: flex;
+  }
+  .item{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  .picture {
+    width : 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+img{
+  width : 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  vertical-align: middle;
+}
+  .description {
+    width : 50%;
+  }
+
+  @media(max-width: 500px)
+{
+  .item{
+    display:flex;
+    flex-direction: column;
+  }
+    .picture {
+      width : 90%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .description {
+      width : 90%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Raleway:wght@100;200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="overlay" onclick="off()">
+    <div id="overlay_text">Please Wait.....</div>
+</div>
+<div class="container">
+    <div class="app_title"><h1>Travel Planner</h1></div>
+    <div class="add_travel">
+        <button id="add_button"> Add Travel </button>
+    </div>
+    <div class="travel_list"><h2> travel list</h2>
+
+    </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Travel Info</h2>
+        </div>
+        <div class="modal-body">
+            <form class="form-container">
+            <label for="city"><b>City</b></label>
+            <input type="text" placeholder="Enter City" id="city" required>
+            <label for="date"><b>Date</b></label>
+            <input type="date" placeholder="Enter Date" id="date" required>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" id="add-new-schedule">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="alert-modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header alert-header">
+            <h3>Caution</h3>
+        </div>
+        <div class="modal-body">
+            <form class="modal-container">
+                <br>
+                <p class = "modal-text" id="alert-text" align="center">Failed to find City</p>
+                <br>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" id="alert_btn">OK</button>
+        </div>
+    </div>
+</div>
+<script> // Check that service workers are supported
+if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => { navigator.serviceWorker.register('/service-worker.js'); });
+}
+</script>
+</body>
+</html>

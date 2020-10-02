@@ -1,0 +1,58 @@
+body{
+  background-color: lightgrey;
+}
+
+#add_button{
+  float:right;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.edit_button, .delete_button{
+  float:left;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 45%;
+}
+
+.delete_button{
+  margin-left: 20px;
+}
+
+.container .app_title{
+  background-color: white;
+  padding : 10px;
+}
+
+.container .travel_list{
+  background-color: white;
+  padding : 10px;
+  padding-bottom: 50px;
+}
+
+.item{
+  background-color: lightpink;
+}
+
+h1 {
+  grid-area: ti;
+  font-family: 'Raleway', sans-serif;;
+  font-size: 3em;
+}
+h2 {
+  grid-area: ti;
+  //font-family: 'Oxygen', Sans-Serif;
+  font-family: 'Raleway', sans-serif;;
+  font-size: 2em;
+}
+
+.where, .when{
+  font-size : 1.5em;
+  font-family: 'Bitter', serif;
+}
