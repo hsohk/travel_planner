@@ -41,8 +41,7 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         }),
-  //      new WorkboxPlugin.GenerateSW()
-  //      new WorkboxPlugin.GenerateSW()
+        new WorkboxPlugin.GenerateSW()
     ]
 
 }
