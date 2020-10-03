@@ -2,11 +2,16 @@ import {deleteTravel} from "./schedule";
 import {editTravel} from "./schedule";
 import {addPopupHide} from "./modal";
 
-let travel_list;
+let travelListElement;
 let travelList;
+/**
+ * Update UI after ADDING, EDTING, DELETING
+ *
+ * Remove all innerHTML of .travel_list and re-generate
+ */
 function updateItems(){
-    travel_list =  document.querySelector(".travel_list");
-    travel_list.innerHTML = '';
+    travelListElement =  document.querySelector(".travel_list");
+    travelListElement.innerHTML = '';
     getLists()
         .then(function(dataList){
             travelList = dataList;
@@ -17,6 +22,11 @@ function updateItems(){
     addPopupHide();
 }
 
+/**
+ * Fetching datas from server/all
+ *
+ * All datas will be fetched from server.
+ */
 const getLists = async ()=>{
     // const res = await fetch(baseURL+animal+key);
     const res = await fetch("http://localhost:8081/all");
@@ -27,13 +37,32 @@ const getLists = async ()=>{
     }
 }
 
+
+/**
+ * Calculate D Day
+ *
+ * @param{targetDay} Target Day
+ * D Day will be calculated with date and current day
+ */
+ function CalculateDDay(targetDay){
+    return Math.ceil((new Date(targetDay)- new Date()) / 1000/60/60/24);
+}
+
+/**
+ * Update travel list to UI
+ * .item01,item02,item03..item${number of lists} will be added
+ *
+ * @param{data} entity iof data
+ * @param{index}  index of current entity
+ * data = { date, city, country, max_temp, min_temp}
+ */
 function makeItem(data, index){
  //   const fragment = document.createDocumentFragment();  // ← uses a DocumentFragment instead of a <div>for (let i = 0; i < 200; i++) {
     //ITEM DIV
     const itemDiv = document.createElement('div');
     itemDiv.classList.add("item")
     itemDiv.classList.add("item"+index)
-    const dDay =  Math.ceil((new Date(data.date)- new Date()) / 1000/60/60/24);
+    const dDay = CalculateDDay(data.date);
     itemDiv.innerHTML
         =`<div class="picture" ><img class="item_pic" src="${data.img}"></div>
             <div class="description">
@@ -51,18 +80,6 @@ function makeItem(data, index){
     itemDiv.querySelector(`.edit_button`).addEventListener("click", editTravel);
     const travelList = document.querySelector(".travel_list");
     travelList.appendChild(itemDiv);
-
 }
 
-export {updateItems,travelList}
-/*
-
-const fragment = document.createDocumentFragment();  // ← uses a DocumentFragment instead of a <div>
-for (let i = 0; i < 200; i++) {
-    const newElement = document.createElement('p');
-    newElement.innerText = 'This is paragraph number ' + i;
-
-    fragment.appendChild(newElement);
-}
-
-document.body.appendChild(fragment); // reflow and repaint here -- once!*/
+export {updateItems,travelList,CalculateDDay}

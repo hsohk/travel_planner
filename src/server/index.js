@@ -33,7 +33,10 @@ datas = [{
 const port = 8081;
 const server = app.listen(port,()=>{console.log(`Runing server on localhost:${port}`)});
 
-
+/**
+ * /add endpoint
+ * city,country,weather,max_temp,min_temp will be update via API
+ */
 app.post('/add',function(req,res){
     const newEntry={
         city : req.body.city,
@@ -53,10 +56,12 @@ app.post('/add',function(req,res){
         }).then(()=>{
             res.send(datas);
     })
-    //console.log(req.body.city);
-    //console.log(req.body.date);
 })
 
+/**
+ * /edit endpoint
+ * city,country,weather,max_temp,min_temp will be update via API
+ */
 app.post('/edit',function(req,res){
     const editEntry={
         city : req.body.city,
@@ -73,24 +78,18 @@ app.post('/edit',function(req,res){
     updateInfo(editEntry)
         .then(()=>{
             if(editEntry.city!== "unknown")
-                datas.push(editEntry);
+                datas[req.body.id]=editEntry;
         }).then(()=>{
         res.send(datas);
     })
-
-    console.log(req.body.city);
-    console.log(req.body.date);
 })
 
 app.post('/del',function(req,res){
     if (req.body.id > -1) datas.splice(req.body.id, 1)
-    console.log(req.body.city);
-    console.log(req.body.date);
 })
 
 app.get('/all', function(req,res){
     res.send(datas);
-    console.log("/all is called : ", datas.length)
 });
 
 async function updateInfo(entry){
@@ -100,6 +99,11 @@ async function updateInfo(entry){
 
 }
 
+/**
+ * Update Geometric information
+ * API : geonames
+ * entry.city will be used as parameter
+ */
 async function updateGeo(entry){
     const res = await fetch(
         GEO_URL+entry.city +"&maxRows=1&username=" + process.env.GEO_ID
@@ -111,7 +115,6 @@ async function updateGeo(entry){
             entry.country = result.geonames[0].countryName;
             entry.lat = result.geonames[0].lat;
             entry.lng = result.geonames[0].lng;
-            console.log("res city : "+ entry.city + " / country : "+ entry.country)
         } else {
             entry.city = "unknown"
         }
@@ -120,17 +123,18 @@ async function updateGeo(entry){
     }
 }
 
+/**
+ * Update Weather information
+ * API : weatherbit
+ * entry.date/lat/lng wil be used as parameter
+ * For typical weather check weather of 1 year before the target day
+ */
 async function updateWeather(entry){
-    console.log("Weather")
     let date = new Date(entry.date);
-    const start_date = (date.getFullYear()-1)+"-"+(date.getMonth()+1)+"-"+date.getDate();
+    const startDate = (date.getFullYear()-1)+"-"+(date.getMonth()+1)+"-"+date.getDate();
     date.setDate(date.getDate()+1);
-    const end_date = (date.getFullYear()-1)+"-"+(date.getMonth()+1)+"-"+date.getDate();
-    console.log(end_date)
-
-    console.log(entry.date)
-
-    const url = `${WEA_URL}lat=${entry.lat}&lon=${entry.lng}&start_date=${start_date}&end_date=${end_date}&key=${process.env.WEATHER_KEY}`
+    const endDate = (date.getFullYear()-1)+"-"+(date.getMonth()+1)+"-"+date.getDate();
+    const url = `${WEA_URL}lat=${entry.lat}&lon=${entry.lng}&start_date=${startDate}&end_date=${endDate}&key=${process.env.WEATHER_KEY}`
     console.log(url);
     const res = await fetch(
         url
@@ -141,11 +145,16 @@ async function updateWeather(entry){
             entry.max_temp = result.data[0].max_temp;
             entry.min_temp = result.data[0].min_temp;
         }
-        console.log("res max_temp : "+ entry.max_temp + " / min_temp : "+ entry.min_temp)
     } catch(e){
         console.log("error", e);
     }
 }
+
+/**
+ * Update Image information
+ * API : pixabay
+ * entry.city(after updated by geo) will be used as parameter
+ */
 async function updateImg(entry){
     const url = IMG_URL+entry.city +"&key=" + process.env.IMG_KEY;
     console.log(url);
@@ -157,7 +166,6 @@ async function updateImg(entry){
         const result =  await res.json();
         if(result.total>1){
             entry.img = result.hits[0].webformatURL;
-            console.log("res url : "+ entry.img)
         }
     } catch(e){
         console.log("error", e);

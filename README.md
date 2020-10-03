@@ -17,3 +17,12 @@ Tools which are used in this project
     - `npm run build-dev` for development
     - `npm run build-prod` for production
     - `npm run test` for test
+    - `Add`/`Edit`/`Delete` were implemented
+    - Server support 
+        - GET '/all'
+        - POST '/del', 'add', 'edit'
+- Extra Features
+    - All data will be saved in server.
+    - Allow the user to add additional trips
+    - Allow the user to remove the trip.
+    - Use Local Storage to save the data so that when they close, then revisit the page, their information is still there.

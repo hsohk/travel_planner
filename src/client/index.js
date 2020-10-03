@@ -18,8 +18,8 @@ addPopupBtn.addEventListener("click",addTravelBtn);
 const closeBtn = document.querySelector('.close');
 closeBtn.addEventListener("click",addPopupHide);
 
-const alert_btn = document.querySelector('#alert_btn');
-alert_btn.addEventListener("click",alertHide);
+const alertBtn = document.querySelector('#alert_btn');
+alertBtn.addEventListener("click",alertHide);
 
 var modal = document.getElementById("myModal");
 window.onclick = function(event) {

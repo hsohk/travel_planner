@@ -36,30 +36,30 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Test for delete travel ">
-    <configuration name="Add " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Test for get all travels list ">
+    <configuration name="Request entries to Server from Client " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/addtravel.test.js" />
+      <test-file value="$PROJECT_DIR$/test/travel-client.test.js" />
       <test-names>
-        <test-name value="Add " />
+        <test-name value="Request entries to Server from Client " />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Test for delete travel " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Test for delete one travels entity " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/travel.test.js" />
+      <test-file value="$PROJECT_DIR$/test/travel-client.test.js" />
       <test-names>
-        <test-name value="Test for delete travel " />
+        <test-name value="Test for delete one travels entity " />
       </test-names>
       <method v="2" />
     </configuration>
@@ -70,35 +70,39 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/addtravel.test.js" />
+      <test-file value="$PROJECT_DIR$/test/travel-server.test.js" />
       <test-names>
         <test-name value="Test for get all travels list " />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="verify getData function throws bad request when parameters bad values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="travel-client.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/addtravel.test.js" />
-      <test-names>
-        <test-name value="verify getData function throws bad request when parameters bad values" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/travel-client.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/server/index.js" working-dir="$PROJECT_DIR$/src/server">
+    <configuration name="travel-server.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/travel-server.test.js" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Test for delete travel " />
         <item itemvalue="Jest.Test for get all travels list " />
-        <item itemvalue="Jest.Add " />
-        <item itemvalue="Jest.verify getData function throws bad request when parameters bad values" />
-        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Jest.travel-server.test.js" />
+        <item itemvalue="Jest.travel-client.test.js" />
+        <item itemvalue="Jest.Request entries to Server from Client " />
+        <item itemvalue="Jest.Test for delete one travels entity " />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +116,7 @@
       <updated>1601250409753</updated>
       <workItem from="1601250410881" duration="4230000" />
       <workItem from="1601258886726" duration="29440000" />
-      <workItem from="1601550446507" duration="25040000" />
+      <workItem from="1601550446507" duration="34927000" />
     </task>
     <servers />
   </component>
@@ -132,22 +136,22 @@
       <screen x="80" y="23" width="3280" height="1867" />
     </state>
     <state x="1716" y="565" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/80.23.3280.1867@80.23.3280.1867" timestamp="1601335767200" />
-    <state width="1142" height="408" key="GridCell.Tab.0.bottom" timestamp="1601646383258">
+    <state width="1142" height="408" key="GridCell.Tab.0.bottom" timestamp="1601688456783">
       <screen x="80" y="23" width="3280" height="1867" />
     </state>
-    <state width="1142" height="408" key="GridCell.Tab.0.bottom/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383258" />
-    <state width="1142" height="408" key="GridCell.Tab.0.center" timestamp="1601646383257">
+    <state width="1142" height="408" key="GridCell.Tab.0.bottom/80.23.3280.1867@80.23.3280.1867" timestamp="1601688456783" />
+    <state width="1142" height="408" key="GridCell.Tab.0.center" timestamp="1601688456782">
       <screen x="80" y="23" width="3280" height="1867" />
     </state>
-    <state width="1142" height="408" key="GridCell.Tab.0.center/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383257" />
-    <state width="1142" height="408" key="GridCell.Tab.0.left" timestamp="1601646383256">
+    <state width="1142" height="408" key="GridCell.Tab.0.center/80.23.3280.1867@80.23.3280.1867" timestamp="1601688456782" />
+    <state width="1142" height="408" key="GridCell.Tab.0.left" timestamp="1601688456781">
       <screen x="80" y="23" width="3280" height="1867" />
     </state>
-    <state width="1142" height="408" key="GridCell.Tab.0.left/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383256" />
-    <state width="1142" height="408" key="GridCell.Tab.0.right" timestamp="1601646383257">
+    <state width="1142" height="408" key="GridCell.Tab.0.left/80.23.3280.1867@80.23.3280.1867" timestamp="1601688456781" />
+    <state width="1142" height="408" key="GridCell.Tab.0.right" timestamp="1601688456783">
       <screen x="80" y="23" width="3280" height="1867" />
     </state>
-    <state width="1142" height="408" key="GridCell.Tab.0.right/80.23.3280.1867@80.23.3280.1867" timestamp="1601646383257" />
+    <state width="1142" height="408" key="GridCell.Tab.0.right/80.23.3280.1867@80.23.3280.1867" timestamp="1601688456783" />
     <state width="1142" height="501" key="GridCell.Tab.1.bottom" timestamp="1601623110508">
       <screen x="80" y="23" width="3280" height="1867" />
     </state>
@@ -206,21 +210,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/client/js/update.js</url>
-          <line>7</line>
+          <line>12</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/server/index.js</url>
-          <line>159</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/client/index.js</url>
           <line>5</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/travel-client.test.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
